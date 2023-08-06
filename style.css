@@ -2,41 +2,58 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
-*{
+* {
     -webkit-tap-highlight-color: transparent;
     transition: 0.5s;
 }
 
-body{
+body {
     background-color: #141c2f;
 }
 
-body.lightmode{
+body.lightmode {
     background-color: #f5f8ff;
 }
 
-body.lightmode .heading, body.lightmode .light-text ,body.lightmode .search-input , body.lightmode .name , body.lightmode .date , body.lightmode .bio ,body.lightmode .twitter-link ,body.lightmode .atGit-value ,body.lightmode .location-value ,body.lightmode .github-url ,body.lightmode .repo,body.lightmode .followers ,body.lightmode .following ,body.lightmode .repo-value ,body.lightmode .followers-value ,body.lightmode .following-value{
+body.lightmode .heading,
+body.lightmode .light-text,
+body.lightmode .search-input,
+body.lightmode .name,
+body.lightmode .date,
+body.lightmode .bio,
+body.lightmode .twitter-link,
+body.lightmode .atGit-value,
+body.lightmode .location-value,
+body.lightmode .github-url,
+body.lightmode .repo,
+body.lightmode .followers,
+body.lightmode .following,
+body.lightmode .repo-value,
+body.lightmode .followers-value,
+body.lightmode .following-value {
     color: #3a3a3a;
 }
 
-body.lightmode .topBar img , body.lightmode .data img{
+body.lightmode .topBar img,
+body.lightmode .data img {
     filter: invert(1);
 }
 
-body.lightmode .searchBar , body.lightmode .hero{
+body.lightmode .searchBar,
+body.lightmode .hero {
     background-color: #fcfffe;
     box-shadow: 0px 0px 20px rgb(166, 166, 166);
 }
 
-body.lightmode .RFF{
+body.lightmode .RFF {
     background-color: #d2d2d2;
 }
 
-body.lightmode .profilePic{
-    border-color: #3a3a3a; 
+body.lightmode .profilePic {
+    border-color: #3a3a3a;
 }
 
-.topBar{
+.topBar {
     display: flex;
     flex-direction: row;
     width: fit-content;
@@ -45,14 +62,16 @@ body.lightmode .profilePic{
     margin: 5vw auto 2vw auto;
 }
 
-.heading{
+.heading {
+    letter-spacing: 0.5vw;
+
     color: white;
     font-family: 'Poppins';
     font-size: 1.4vw;
     margin: 0vw 0vw 0vw 0vw;
 }
 
-.light-text{
+.light-text {
     color: white;
     margin: 0.5vw 0vw 0vw 35vw;
     font-family: 'IBM Plex Mono';
@@ -62,14 +81,14 @@ body.lightmode .profilePic{
     cursor: pointer;
 }
 
-.topBar img{
+.topBar img {
     width: 1.2vw;
     height: 1.2vw;
     margin: 0.5vw 0vw 0vw 1vw;
     cursor: pointer;
 }
 
-.searchBar{
+.searchBar {
     display: flex;
     flex-direction: row;
     width: fit-content;
@@ -80,13 +99,13 @@ body.lightmode .profilePic{
     background-color: #1f2a48;
 }
 
-.search-logo{
-    width: 2vw ;
+.search-logo {
+    width: 2vw;
     height: 2vw;
     margin: 1.3vw 1.5vw 1vw 2vw;
 }
 
-.search-input{
+.search-input {
     border: none;
     font-family: 'IBM Plex Mono';
     background-color: transparent;
@@ -95,41 +114,41 @@ body.lightmode .profilePic{
     font-size: 1vw;
 }
 
-.search-input:focus::placeholder{
+.search-input:focus::placeholder {
     color: transparent;
 }
 
-.search-input:focus{
+.search-input:focus {
     outline: none;
 }
 
-.searchButton{
+.searchButton {
     border: none;
     background-color: #0079fe;
     border-radius: 10px;
     margin: 0.7vw 0.7vw 0.7vw 2vw;
     cursor: pointer;
-    transform: scale(0.9,0.9);
+    transform: scale(0.9, 0.9);
     font-size: 1vw;
     transition: all 0.3s;
 }
 
-.searchButton p{
+.searchButton p {
     color: white;
     margin: 1vw 2vw 1vw 2vw;
     font-family: 'IBM Plex Mono';
     font-weight: 800;
 }
 
-.searchButton:hover{
+.searchButton:hover {
     outline: 1px solid white;
 }
 
-.searchButton:active{
-    transform: scale(0.8,0.8);
+.searchButton:active {
+    transform: scale(0.8, 0.8);
 }
 
-.hero{
+.hero {
     display: flex;
     flex-direction: row;
     width: 48vw;
@@ -141,7 +160,7 @@ body.lightmode .profilePic{
 
 }
 
-.profilePic{
+.profilePic {
     width: 7.5vw;
     height: 7.5vw;
     border-radius: 150px;
@@ -149,7 +168,7 @@ body.lightmode .profilePic{
     border: 1px solid white;
 }
 
-.details{
+.details {
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -157,14 +176,14 @@ body.lightmode .profilePic{
     margin: 1vw 0vw 2vw 2vw;
 }
 
-.name-and-date{
+.name-and-date {
     display: flex;
     flex-direction: row;
     width: fit-content;
     height: fit-content;
 }
 
-.name{
+.name {
     font-family: 'IBM Plex Mono';
     color: white;
     font-size: 1.5vw;
@@ -174,7 +193,7 @@ body.lightmode .profilePic{
     word-wrap: break-word;
 }
 
-.date{
+.date {
     color: white;
     font-family: 'IBM Plex Mono';
     margin: 1.8vw 0vw 0vw 2.5vw;
@@ -183,7 +202,7 @@ body.lightmode .profilePic{
     word-wrap: break-word;
 }
 
-.at{
+.at {
     color: white;
     font-family: 'IBM Plex Mono';
     color: #0079fe;
@@ -192,7 +211,7 @@ body.lightmode .profilePic{
     margin-top: 2vw;
 }
 
-.bio{
+.bio {
     color: white;
     margin-bottom: 2vw;
     font-family: 'IBM Plex Mono';
@@ -200,7 +219,7 @@ body.lightmode .profilePic{
     width: 32vw;
 }
 
-.RFF{
+.RFF {
     display: flex;
     flex-direction: row;
     width: fit-content;
@@ -212,25 +231,31 @@ body.lightmode .profilePic{
     font-size: 1vw;
 }
 
-.repo, .followers , .following{
+.repo,
+.followers,
+.following {
     color: white;
     font-family: 'IBM Plex Mono';
     font-size: 600;
     margin: 1vw 2.6vw 1vw 3vw;
 }
 
-.repo-text, .followers-text , .following-text{
+.repo-text,
+.followers-text,
+.following-text {
     margin: 0vw 0vw 0vw 0vw;
 }
 
-.repo-value , .followers-value , .following-value{
+.repo-value,
+.followers-value,
+.following-value {
     color: white;
     font-family: 'VT323';
     font-size: 2vw;
     margin: 0vw 0vw 0vw 0vw;
 }
 
-.data{
+.data {
     display: flex;
     flex-direction: column;
     width: fit-content;
@@ -239,174 +264,190 @@ body.lightmode .profilePic{
     font-size: 1vw;
 }
 
-.row{
+.row {
     display: flex;
     flex-direction: row;
     color: white;
     font-family: 'IBM Plex Mono';
 }
 
-.twitter , .atGitHub , .location , .github{
+.twitter,
+.atGitHub,
+.location,
+.github {
     display: flex;
     flex-direction: row;
     margin-bottom: 1vw;
 }
 
-.twitter-link , .atGit-value , .location-value , .github-url{
+.twitter-link,
+.atGit-value,
+.location-value,
+.github-url {
     margin: 0vw 0vw 0vw 0vw;
     width: 13vw;
     word-wrap: break-word;
 }
 
-.twitter{
+.twitter {
     margin-left: 2vw;
 }
 
-.atGitHub{
+.atGitHub {
     margin-left: 2vw;
 }
 
-.data img{
+.data img {
     width: 1.3vw;
     height: 1.3vw;
     margin: 0vw 1vw 0vw 0vw;
 }
 
 
-@media only screen and (max-width : 800px){
+@media only screen and (max-width : 800px) {
 
-    .topBar{
+    .topBar {
         margin-top: 10vw;
         margin-bottom: 13vw;
     }
 
-    .heading{
+    .heading {
+        letter-spacing: 2vw;
         font-size: 6vw;
     }
 
-    .light-text{
+    .light-text {
         font-size: 4vw;
         letter-spacing: 2vw;
         margin-left: 25vw;
         margin-top: 2vw;
     }
 
-    .topBar img{
+    .topBar img {
         width: 5vw;
         height: 5vw;
         margin-left: 4vw;
         margin-top: 2vw;
     }
 
-    .search-logo{
+    .search-logo {
         width: 8vw;
         height: 8vw;
         margin: 4vw 4vw 4vw 4vw;
     }
 
-    .search-input{
+    .search-input {
         font-size: 4vw;
         width: 45vw;
         height: 15vw;
     }
 
-    .searchButton p{
+    .searchButton p {
         font-size: 4vw;
         margin: 0vw 4vw 0vw 4vw;
     }
 
-    .hero{
+    .hero {
         width: 90vw;
         height: fit-content;
         margin-top: 5vw;
         margin-bottom: 20vw;
     }
 
-    .profilePic{
-        width: 20vw ;
+    .profilePic {
+        width: 20vw;
         height: 20vw;
         margin: 6vw 0vw 0vw 6vw;
     }
 
-    .details{
+    .details {
         margin-left: 7vw;
     }
 
-    .name-and-date{
+    .name-and-date {
         flex-direction: column;
     }
 
-    .name{
+    .name {
         width: 50vw;
         font-size: 6vw;
     }
 
-    .date{
+    .date {
         margin: 4vw 0vw 4vw 0vw;
         font-size: 4vw;
         width: 50vw;
     }
 
-    .at{
+    .at {
         font-size: 4vw;
         margin-top: 0vw;
     }
 
-    .bio{
+    .bio {
         font-size: 3vw;
         margin-top: 10vw;
         margin-left: -25vw;
         width: 75vw;
     }
 
-    .RFF{
+    .RFF {
         margin: 4vw 0vw 0vw -28vw;
     }
 
-    .repo , .followers , .following{
+    .repo,
+    .followers,
+    .following {
         font-size: 3.5vw;
         margin: 4vw 4vw 4vw 4vw;
     }
 
-    .repo{
+    .repo {
         margin-left: 8vw;
     }
 
-    .following{
+    .following {
         margin-right: 8vw;
     }
 
-    .repo-value , .followers-value, .following-value{
+    .repo-value,
+    .followers-value,
+    .following-value {
         font-size: 7vw;
         margin-top: 2vw;
     }
 
-    .data{
+    .data {
         margin: 6vw 0vw 0vw -25vw;
     }
 
-    .data img{
+    .data img {
         width: 6vw;
         height: 6vw;
         margin-right: 4vw;
     }
 
-    .row{
+    .row {
         flex-direction: column;
     }
 
-    .twitter-link , .atGit-value ,.location-value ,.github-url{
+    .twitter-link,
+    .atGit-value,
+    .location-value,
+    .github-url {
         width: 65vw;
         height: fit-content;
         font-size: 4vw;
     }
 
-    .twitter , .atGitHub , .github , .location{
+    .twitter,
+    .atGitHub,
+    .github,
+    .location {
         margin: 0vw 0vw 4vw 0vw;
     }
 
-    .atGitHub{
+    .atGitHub {
         margin-bottom: 5vw;
     }
 }
-
