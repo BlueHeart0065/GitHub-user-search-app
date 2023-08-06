@@ -136,13 +136,17 @@ body{
     font-size: 1.5vw;
     font-weight: 800;
     margin-bottom: 0vw;
+    width: 20vw;
+    word-wrap: break-word;
 }
 
 .date{
     color: white;
     font-family: 'IBM Plex Mono';
-    margin: 1.8vw 0vw 0vw 10vw;
+    margin: 1.8vw 0vw 0vw 2.5vw;
     font-size: 1vw;
+    width: 10vw;
+    word-wrap: break-word;
 }
 
 .at{
@@ -213,14 +217,16 @@ body{
 
 .twitter-link , .atGit-value , .location-value , .github-url{
     margin: 0vw 0vw 0vw 0vw;
+    width: 13vw;
+    word-wrap: break-word;
 }
 
 .twitter{
-    margin-left: 10vw;
+    margin-left: 2vw;
 }
 
 .atGitHub{
-    margin-left: 7vw;
+    margin-left: 2vw;
 }
 
 .data img{
