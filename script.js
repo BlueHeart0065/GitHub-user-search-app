@@ -35,26 +35,26 @@ search.onclick = function () {
             twitterLink.innerHTML = data.twitter_username;
             githubURL.innerHTML = data.url;
             atgit.innerHTML = data.company;
-            
-            if(!data.name){
+
+            if (!data.name) {
                 username.innerHTML = "(name hidden)";
             }
-            if(!data.created_at){
+            if (!data.created_at) {
                 date.innerHTML = "Date of creation not available";
             }
-            if(!data.updated_at){
+            if (!data.updated_at) {
                 at.innerHTML = "Last update time is unknown";
             }
-            if(!data.bio){
+            if (!data.bio) {
                 profileBio.innerHTML = "User hasn't written anything in his bio";
             }
-            if(!data.location){
+            if (!data.location) {
                 Location.innerHTML = "location not given by the user";
             }
-            if(!data.twitter_username){
+            if (!data.twitter_username) {
                 twitterLink.innerHTML = "twitter url not provided by the user";
             }
-            if(!data.company){
+            if (!data.company) {
                 atgit.innerHTML = "no company joined yet";
             }
 
@@ -72,14 +72,14 @@ var flag = 0;
 theme.onclick = switchTheme;
 themeText.onclick = switchTheme;
 
-function switchTheme(){
+function switchTheme() {
     document.body.classList.toggle("lightmode");
-    if(flag == 0){
+    if (flag == 0) {
         document.getElementsByClassName("light-text")[0].innerHTML = "DARK ";
         theme.src = "assets/darkmode-logo.png"
         flag = 1;
     }
-    else{
+    else {
         document.getElementsByClassName("light-text")[0].innerHTML = "LIGHT";
         theme.src = "assets/ligthMode-logo.png"
         flag = 0;
