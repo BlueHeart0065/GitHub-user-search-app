@@ -24,17 +24,19 @@ body{
 
 .light-text{
     color: white;
-    margin: 0.5vw 0vw 0vw 33vw;
+    margin: 0.5vw 0vw 0vw 35vw;
     font-family: 'IBM Plex Mono';
     letter-spacing: 2px;
     font-weight: 800;
     font-size: 0.8vw;
+    cursor: pointer;
 }
 
 .topBar img{
     width: 1.2vw;
     height: 1.2vw;
     margin: 0.5vw 0vw 0vw 1vw;
+    cursor: pointer;
 }
 
 .searchBar{
@@ -59,7 +61,7 @@ body{
     font-family: 'IBM Plex Mono';
     background-color: transparent;
     color: white;
-    width: 31.5vw;
+    width: 31.3vw;
     font-size: 1vw;
 }
 
@@ -74,6 +76,8 @@ body{
     margin: 0.7vw 0.7vw 0.7vw 2vw;
     cursor: pointer;
     transform: scale(0.9,0.9);
+    font-size: 1vw;
+    transition: all 0.3s;
 }
 
 .searchButton p{
@@ -83,10 +87,18 @@ body{
     font-weight: 800;
 }
 
+.searchButton:hover{
+    outline: 1px solid white;
+}
+
+.searchButton:active{
+    transform: scale(0.8,0.8);
+}
+
 .hero{
     display: flex;
     flex-direction: row;
-    width: fit-content;
+    width: 48vw;
     height: fit-content;
     border-radius: 10px;
     /* border: 1px solid white; */
@@ -99,7 +111,7 @@ body{
     width: 7.5vw;
     height: 7.5vw;
     border-radius: 150px;
-    margin: 2vw 1vw 0vw 2vw;
+    margin: 3vw 1vw 0vw 3vw;
     border: 1px solid white;
 }
 
@@ -137,7 +149,7 @@ body{
     color: white;
     font-family: 'IBM Plex Mono';
     color: #0079fe;
-    
+    font-size: 1vw;
 }
 
 .bio{
@@ -156,6 +168,7 @@ body{
     background-color: #141c2f;
     margin-right: 4vw;
     margin-bottom: 1vw;
+    font-size: 1vw;
 }
 
 .repo, .followers , .following{
@@ -182,6 +195,7 @@ body{
     width: fit-content;
     height: fit-content;
     margin-top: 1vw;
+    font-size: 1vw;
 }
 
 .row{
