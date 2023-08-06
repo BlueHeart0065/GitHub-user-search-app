@@ -63,7 +63,7 @@ body.lightmode .profilePic {
 }
 
 .heading {
-    letter-spacing: 0.5vw;
+    /* letter-spacing: 0.5vw; */
 
     color: white;
     font-family: 'Poppins';
@@ -312,7 +312,7 @@ body.lightmode .profilePic {
     }
 
     .heading {
-        letter-spacing: 2vw;
+        /* letter-spacing: 2vw; */
         font-size: 6vw;
     }
 
