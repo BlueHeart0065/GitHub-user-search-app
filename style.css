@@ -59,7 +59,7 @@ body{
     font-family: 'IBM Plex Mono';
     background-color: transparent;
     color: white;
-    width: 30vw;
+    width: 31.5vw;
     font-size: 1vw;
 }
 
@@ -99,7 +99,7 @@ body{
     width: 7.5vw;
     height: 7.5vw;
     border-radius: 150px;
-    margin: 2vw 0vw 0vw 2vw;
+    margin: 2vw 1vw 0vw 2vw;
     border: 1px solid white;
 }
 
@@ -108,7 +108,7 @@ body{
     flex-direction: column;
     width: fit-content;
     height: fit-content;
-    margin: 2vw 0vw 2vw 2vw;
+    margin: 1vw 0vw 2vw 2vw;
 }
 
 .name-and-date{
@@ -154,14 +154,15 @@ body{
     height: fit-content;
     border-radius: 10px;
     background-color: #141c2f;
-    margin-right: 2vw;
+    margin-right: 4vw;
+    margin-bottom: 1vw;
 }
 
 .repo, .followers , .following{
     color: white;
     font-family: 'IBM Plex Mono';
     font-size: 600;
-    margin: 1vw 3vw 1vw 3vw;
+    margin: 1vw 2.6vw 1vw 3vw;
 }
 
 .repo-text, .followers-text , .following-text{
@@ -174,3 +175,44 @@ body{
     font-size: 2vw;
     margin: 0vw 0vw 0vw 0vw;
 }
+
+.data{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin-top: 1vw;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-family: 'IBM Plex Mono';
+}
+
+.twitter , .atGitHub , .location , .github{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1vw;
+}
+
+.twitter-link , .atGit-value , .location-value , .github-url{
+    margin: 0vw 0vw 0vw 0vw;
+}
+
+.twitter{
+    margin-left: 10vw;
+}
+
+.atGitHub{
+    margin-left: 7vw;
+}
+
+.data img{
+    width: 1.3vw;
+    height: 1.3vw;
+    margin: 0vw 1vw 0vw 0vw;
+}
+
+
