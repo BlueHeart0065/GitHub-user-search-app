@@ -23,10 +23,18 @@ search.onclick = function () {
     fetch("https://api.github.com/users/" + name)
         .then(response => { return response.json() })
         .then(data => {
+
+            var realDateJoined = "";
+            var realDateUpdate = "";
+            for(var i = 0;i < 10;i++){
+                realDateJoined += data.created_at[i];
+                realDateUpdate += data.updated_at[i];
+            }
+
             avatar.src = data.avatar_url;
             username.innerHTML = data.name;
-            date.innerHTML = "Joined " + data.created_at.split('-').join(' ');
-            at.innerHTML = "Last updated on " + data.updated_at;
+            date.innerHTML = "Joined " + realDateJoined;
+            at.innerHTML = "Last updated on " + realDateUpdate;
             profileBio.innerHTML = data.bio;
             repos.innerHTML = data.public_repos;
             Followers.innerHTML = data.followers;
