@@ -24,7 +24,7 @@ body{
 
 .light-text{
     color: white;
-    margin: 0.5vw 0vw 0vw 27vw;
+    margin: 0.5vw 0vw 0vw 33vw;
     font-family: 'IBM Plex Mono';
     letter-spacing: 2px;
     font-weight: 800;
@@ -59,7 +59,7 @@ body{
     font-family: 'IBM Plex Mono';
     background-color: transparent;
     color: white;
-    width: 23vw;
+    width: 30vw;
     font-size: 1vw;
 }
 
@@ -81,4 +81,96 @@ body{
     margin: 1vw 2vw 1vw 2vw;
     font-family: 'IBM Plex Mono';
     font-weight: 800;
+}
+
+.hero{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    /* border: 1px solid white; */
+    margin: 0vw auto 0vw auto;
+    background-color: #1f2a48;
+
+}
+
+.profilePic{
+    width: 7.5vw;
+    height: 7.5vw;
+    border-radius: 150px;
+    margin: 2vw 0vw 0vw 2vw;
+    border: 1px solid white;
+}
+
+.details{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: fit-content;
+    margin: 2vw 0vw 2vw 2vw;
+}
+
+.name-and-date{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+}
+
+.name{
+    font-family: 'IBM Plex Mono';
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 800;
+    margin-bottom: 0vw;
+}
+
+.date{
+    color: white;
+    font-family: 'IBM Plex Mono';
+    margin: 1.8vw 0vw 0vw 10vw;
+    font-size: 1vw;
+}
+
+.at{
+    color: white;
+    font-family: 'IBM Plex Mono';
+    color: #0079fe;
+    
+}
+
+.bio{
+    color: white;
+    margin-bottom: 2vw;
+    font-family: 'IBM Plex Mono';
+    font-size: 1vw;
+}
+
+.RFF{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: #141c2f;
+    margin-right: 2vw;
+}
+
+.repo, .followers , .following{
+    color: white;
+    font-family: 'IBM Plex Mono';
+    font-size: 600;
+    margin: 1vw 3vw 1vw 3vw;
+}
+
+.repo-text, .followers-text , .following-text{
+    margin: 0vw 0vw 0vw 0vw;
+}
+
+.repo-value , .followers-value , .following-value{
+    color: white;
+    font-family: 'VT323';
+    font-size: 2vw;
+    margin: 0vw 0vw 0vw 0vw;
 }
