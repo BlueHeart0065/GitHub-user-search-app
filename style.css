@@ -353,7 +353,9 @@ body.lightmode .profilePic{
 
     .bio{
         font-size: 3vw;
+        margin-top: 10vw;
         margin-left: -25vw;
+        width: 75vw;
     }
 
     .RFF{
