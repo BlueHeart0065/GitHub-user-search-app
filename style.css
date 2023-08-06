@@ -188,6 +188,8 @@ body.lightmode .profilePic{
     font-family: 'IBM Plex Mono';
     color: #0079fe;
     font-size: 1vw;
+    margin-bottom: 0vw;
+    margin-top: 2vw;
 }
 
 .bio{
@@ -195,6 +197,7 @@ body.lightmode .profilePic{
     margin-bottom: 2vw;
     font-family: 'IBM Plex Mono';
     font-size: 1vw;
+    width: 32vw;
 }
 
 .RFF{
@@ -328,13 +331,17 @@ body.lightmode .profilePic{
         margin-left: 7vw;
     }
 
+    .name-and-date{
+        flex-direction: column;
+    }
+
     .name{
         width: 50vw;
         font-size: 6vw;
     }
 
     .date{
-        margin: 16vw 0vw 4vw -50vw;
+        margin: 4vw 0vw 4vw 0vw;
         font-size: 4vw;
         width: 50vw;
     }

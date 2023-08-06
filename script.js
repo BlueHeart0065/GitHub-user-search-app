@@ -14,7 +14,7 @@ search.onclick = function () {
     var Location = document.getElementsByClassName("location-value")[0];
     var twitterLink = document.getElementsByClassName("twitter-link")[0];
     var githubURL = document.getElementsByClassName("github-url")[0];
-    var atgit = document.getElementsByClassName("atgit-value")[0];
+    var atgit = document.getElementsByClassName("atGit-value")[0];
 
 
     name = name.split(' ').join('');
@@ -26,8 +26,8 @@ search.onclick = function () {
             avatar.src = data.avatar_url;
             username.innerHTML = data.name;
             date.innerHTML = "Joined " + data.created_at.split('-').join(' ');
-            at.innerHTML = data.email;
-            profileBio.innerHTML = "Last updated on " + data.updated_at;
+            at.innerHTML = "Last updated on " + data.updated_at;
+            profileBio.innerHTML = data.bio;
             repos.innerHTML = data.public_repos;
             Followers.innerHTML = data.followers;
             Following.innerHTML = data.following;
@@ -38,7 +38,24 @@ search.onclick = function () {
             
             if(!data.name){
                 username.innerHTML = "(name hidden)";
-                console.log("reached");
+            }
+            if(!data.created_at){
+                date.innerHTML = "Date of creation not available";
+            }
+            if(!data.updated_at){
+                at.innerHTML = "Last update time is unknown";
+            }
+            if(!data.bio){
+                profileBio.innerHTML = "User hasn't written anything in his bio";
+            }
+            if(!data.location){
+                Location.innerHTML = "location not given by the user";
+            }
+            if(!data.twitter_username){
+                twitterLink.innerHTML = "twitter url not provided by the user";
+            }
+            if(!data.company){
+                atgit.innerHTML = "no company joined yet";
             }
 
         })
