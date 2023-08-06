@@ -46,3 +46,25 @@ search.onclick = function () {
             console.error("Error fetching profile data:", error);
         })
 }
+
+
+var theme = document.getElementsByClassName("sun")[0];
+var themeText = document.getElementsByClassName("light-text")[0];
+var flag = 0;
+
+theme.onclick = switchTheme;
+themeText.onclick = switchTheme;
+
+function switchTheme(){
+    document.body.classList.toggle("lightmode");
+    if(flag == 0){
+        document.getElementsByClassName("light-text")[0].innerHTML = "DARK ";
+        theme.src = "assets/darkmode-logo.png"
+        flag = 1;
+    }
+    else{
+        document.getElementsByClassName("light-text")[0].innerHTML = "LIGHT";
+        theme.src = "assets/ligthMode-logo.png"
+        flag = 0;
+    }
+}

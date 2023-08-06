@@ -2,8 +2,33 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+*{
+    transition: 0.5s;
+}
+
 body{
     background-color: #141c2f;
+}
+
+body.lightmode{
+    background-color: #f5f8ff;
+}
+
+body.lightmode .heading, body.lightmode .light-text ,body.lightmode .search-input , body.lightmode .name , body.lightmode .date , body.lightmode .bio ,body.lightmode .twitter-link ,body.lightmode .atGit-value ,body.lightmode .location-value ,body.lightmode .github-url ,body.lightmode .repo,body.lightmode .followers ,body.lightmode .following ,body.lightmode .repo-value ,body.lightmode .followers-value ,body.lightmode .following-value{
+    color: #3a3a3a;
+}
+
+body.lightmode .topBar img , body.lightmode .data img{
+    filter: invert(1);
+}
+
+body.lightmode .searchBar , body.lightmode .hero{
+    background-color: #fcfffe;
+    box-shadow: 0px 0px 20px rgb(166, 166, 166);
+}
+
+body.lightmode .RFF{
+    background-color: #d2d2d2;
 }
 
 .topBar{
@@ -63,6 +88,10 @@ body{
     color: white;
     width: 31.3vw;
     font-size: 1vw;
+}
+
+.search-input:focus::placeholder{
+    color: transparent;
 }
 
 .search-input:focus{
