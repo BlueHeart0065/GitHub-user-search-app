@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
 *{
+    -webkit-tap-highlight-color: transparent;
     transition: 0.5s;
 }
 
@@ -29,6 +30,10 @@ body.lightmode .searchBar , body.lightmode .hero{
 
 body.lightmode .RFF{
     background-color: #d2d2d2;
+}
+
+body.lightmode .profilePic{
+    border-color: #3a3a3a; 
 }
 
 .topBar{
@@ -264,4 +269,134 @@ body.lightmode .RFF{
     margin: 0vw 1vw 0vw 0vw;
 }
 
+
+@media only screen and (max-width : 800px){
+
+    .topBar{
+        margin-top: 10vw;
+        margin-bottom: 13vw;
+    }
+
+    .heading{
+        font-size: 6vw;
+    }
+
+    .light-text{
+        font-size: 4vw;
+        letter-spacing: 2vw;
+        margin-left: 25vw;
+        margin-top: 2vw;
+    }
+
+    .topBar img{
+        width: 5vw;
+        height: 5vw;
+        margin-left: 4vw;
+        margin-top: 2vw;
+    }
+
+    .search-logo{
+        width: 8vw;
+        height: 8vw;
+        margin: 4vw 4vw 4vw 4vw;
+    }
+
+    .search-input{
+        font-size: 4vw;
+        width: 45vw;
+        height: 15vw;
+    }
+
+    .searchButton p{
+        font-size: 4vw;
+        margin: 0vw 4vw 0vw 4vw;
+    }
+
+    .hero{
+        width: 90vw;
+        height: fit-content;
+        margin-top: 5vw;
+    }
+
+    .profilePic{
+        width: 20vw ;
+        height: 20vw;
+        margin: 6vw 0vw 0vw 6vw;
+    }
+
+    .details{
+        margin-left: 7vw;
+    }
+
+    .name{
+        width: 50vw;
+        font-size: 6vw;
+    }
+
+    .date{
+        margin: 16vw 0vw 4vw -50vw;
+        font-size: 4vw;
+        width: 50vw;
+    }
+
+    .at{
+        font-size: 4vw;
+        margin-top: 0vw;
+    }
+
+    .bio{
+        font-size: 3vw;
+        margin-left: -25vw;
+    }
+
+    .RFF{
+        margin: 4vw 0vw 0vw -28vw;
+    }
+
+    .repo , .followers , .following{
+        font-size: 3.5vw;
+        margin: 4vw 4vw 4vw 4vw;
+    }
+
+    .repo{
+        margin-left: 8vw;
+    }
+
+    .following{
+        margin-right: 8vw;
+    }
+
+    .repo-value , .followers-value, .following-value{
+        font-size: 7vw;
+        margin-top: 2vw;
+    }
+
+    .data{
+        margin: 6vw 0vw 0vw -25vw;
+    }
+
+    .data img{
+        width: 6vw;
+        height: 6vw;
+        margin-right: 4vw;
+    }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .twitter-link , .atGit-value ,.location-value ,.github-url{
+        width: 65vw;
+        height: fit-content;
+        font-size: 4vw;
+    }
+
+    .twitter , .atGitHub , .github , .location{
+        margin: 0vw 0vw 4vw 0vw;
+    }
+
+    .atGitHub{
+        margin-bottom: 5vw;
+    }
+}
 
